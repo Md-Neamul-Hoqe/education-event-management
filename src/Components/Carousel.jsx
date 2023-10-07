@@ -1,6 +1,6 @@
 const Carousel = () => {
   return (
-    <section className="absolute top-0">
+    <section>
       <div className="carousel w-full">
         <div className="hero-overlay absolute bg-opacity-30 pointer-events-none"></div>
         <div id="item1" className="carousel-item w-full">

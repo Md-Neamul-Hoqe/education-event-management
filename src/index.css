@@ -6,3 +6,7 @@
   @apply text-yellow-400;
   @apply border-b-4;
 }
+
+.btn {
+  @apply capitalize;
+}

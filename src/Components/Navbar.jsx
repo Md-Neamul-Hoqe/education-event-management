@@ -22,7 +22,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/service-section">
+          to="/services">
           service
         </NavLink>
       </li>
