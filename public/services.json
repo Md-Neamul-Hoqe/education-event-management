@@ -1,0 +1,123 @@
+[
+    {
+      "id": 1,
+      "category": "Workshops and Webinars",
+      "title": "Workshop Facilitation",
+      "description": "Our Workshop Facilitation service is designed to make your workshops and webinars a resounding success. We provide experienced facilitators who specialize in a wide range of topics, ensuring that your educational events are engaging and informative. Our facilitators have a deep understanding of adult learning principles and can tailor their approach to meet the specific needs of your audience. Whether you're planning a technical workshop, a leadership seminar, or a creative webinar, our facilitators will guide participants through interactive activities and discussions that promote active learning and skill development. With our Workshop Facilitation service, you can expect higher participant engagement, improved knowledge retention, and valuable takeaways for your attendees. Let us help you create memorable and impactful educational events.",
+      "image": "workshop_facilitation.jpg",
+      "price": 500,
+      "duration": "Half-day",
+      "delivery": "In-person or Virtual"
+    },
+    {
+      "id": 2,
+      "category": "Workshops and Webinars",
+      "title": "Webinar Hosting",
+      "description": "Our Webinar Hosting service offers a seamless and professional platform for hosting webinars. Whether you're organizing a product launch, a training session, or a thought leadership webinar, we've got you covered. Our platform provides robust features, including real-time audience engagement tools, audience polling, Q&A sessions, and post-webinar analytics. We also offer technical support to ensure that your webinar runs smoothly without any technical glitches. With our Webinar Hosting service, you can reach a global audience and make a lasting impression on your participants. Enhance your online presence and knowledge-sharing efforts with our reliable and user-friendly webinar platform.",
+      "image": "webinar_hosting.jpg",
+      "price": 300,
+      "duration": "Per Webinar",
+      "delivery": "Virtual"
+    },
+    {
+      "id": 3,
+      "category": "Career Fairs",
+      "title": "Career Fair Promotion",
+      "description": "Our Career Fair Promotion service is designed to maximize the visibility and attendance of your career fair event. We employ a multi-faceted marketing strategy that includes targeted online advertising, social media campaigns, email outreach, and collaboration with academic institutions and professional networks. With our extensive reach and industry connections, we can attract a diverse range of employers and job seekers to your career fair. We understand the importance of a well-attended event in connecting job seekers with potential employers, and we're committed to making your career fair a success.",
+      "image": "career_fair_promotion.jpg",
+      "price": 1000,
+      "duration": "Full Campaign",
+      "delivery": "Marketing and Promotion"
+    },
+    {
+      "id": 4,
+      "category": "Career Fairs",
+      "title": "Virtual Career Fair Platform",
+      "description": "Our Virtual Career Fair Platform is a comprehensive solution for hosting online career fairs. In today's digital age, virtual career fairs are a convenient and effective way to connect job seekers with employers. Our platform offers virtual booths for employers, chat rooms for real-time conversations, video interviewing capabilities, and detailed analytics. We provide technical support to ensure a smooth virtual event experience for both exhibitors and attendees. Make your career fair accessible to a global audience with our user-friendly virtual platform.",
+      "image": "virtual_career_fair.jpg",
+      "price": 1500,
+      "duration": "Per Event",
+      "delivery": "Virtual Platform"
+    },
+    {
+      "id": 5,
+      "category": "Educational Conferences",
+      "title": "Conference Planning",
+      "description": "Our Conference Planning service takes the stress out of organizing educational conferences. We handle everything from venue selection and logistics coordination to speaker management and registration. With our experienced team, you can rest assured that your conference will run smoothly, allowing you to focus on delivering valuable content and engaging discussions. Let us help you create a memorable and informative educational conference that leaves a lasting impact on your attendees.",
+      "image": "conference_planning.jpg",
+      "price": 5000,
+      "duration": "Full Conference Planning",
+      "delivery": "Event Organization"
+    },
+    {
+      "id": 6,
+      "category": "Educational Conferences",
+      "title": "Keynote Speaker Management",
+      "description": "Securing the right keynote speakers is essential for the success of your educational conference. Our Keynote Speaker Management service specializes in identifying and booking keynote speakers and experts in various fields. We work closely with you to understand your conference theme and objectives, and then we reach out to renowned speakers who can deliver inspiring and informative keynote addresses. With our extensive network of speakers, we can connect you with thought leaders who will captivate your audience and elevate your conference's impact.",
+      "image": "keynote_speaker_management.jpg",
+      "price": 2500,
+      "duration": "Per Speaker",
+      "delivery": "Speaker Booking"
+    },
+    {
+      "id": 7,
+      "category": "Training Programs",
+      "title": "Customized Training Programs",
+      "description": "Our Customized Training Programs are tailored to meet the unique needs of your organization or industry. We collaborate with you to design and deliver training sessions that address specific skills, knowledge gaps, and challenges. Whether it's technical training for your employees or professional development programs for your team, we create engaging and effective training modules. Our trainers are experts in their respective fields and are dedicated to helping your organization thrive through continuous learning and skill enhancement.",
+      "image": "customized_training.jpg",
+      "price": 3000,
+      "duration": "Customized",
+      "delivery": "In-person or Virtual"
+    },
+    {
+      "id": 8,
+      "category": "Training Programs",
+      "title": "Online Learning Platforms",
+      "description": "In the digital age, online learning is a powerful tool for training and education. Our Online Learning Platforms service enables organizations to create and manage e-learning platforms. We develop user-friendly online portals that host training materials, assessments, and progress tracking tools. Whether you're an educational institution or a corporate entity, our online learning platforms are designed to enhance learning experiences, promote knowledge retention, and provide flexibility for learners. Empower your audience with accessible and convenient online education.",
+      "image": "online_learning_platforms.jpg",
+      "price": 2000,
+      "duration": "Platform Development",
+      "delivery": "E-learning Solutions"
+    },
+    {
+      "id": 9,
+      "category": "STEM Education Programs",
+      "title": "STEM Workshop for Schools",
+      "description": "Our STEM Workshop for Schools is designed to inspire young minds and foster a love for science, technology, engineering, and mathematics (STEM). This interactive workshop introduces students to exciting STEM concepts through hands-on experiments and activities. Our experienced instructors make learning fun and engaging, sparking curiosity and critical thinking among students. Give your students the opportunity to explore the fascinating world of STEM with our educational workshop.",
+      "image": "stem_workshop.jpg",
+      "price": 800,
+      "duration": "Full-day",
+      "delivery": "In-person"
+    },
+    {
+      "id": 10,
+      "category": "STEM Education Programs",
+      "title": "STEM Curriculum Development",
+      "description": "Our STEM Curriculum Development service empowers educational institutions to create comprehensive and engaging STEM curricula. We work closely with schools and colleges to design curriculum frameworks, lesson plans, and educational materials that align with STEM learning objectives. Our goal is to equip educators with the tools and resources needed to inspire the next generation of scientists, engineers, and innovators. Enhance your STEM education offerings with our curriculum development expertise.",
+      "image": "stem_curriculum.jpg",
+      "price": 1500,
+      "duration": "Customized",
+      "delivery": "Curriculum Development"
+    },
+    {
+      "id": 11,
+      "category": "Health and Wellness Retreats",
+      "title": "Mindfulness and Yoga Retreat",
+      "description": "Escape the hustle and bustle of everyday life and embark on a rejuvenating journey with our Mindfulness and Yoga Retreat. This retreat is a perfect opportunity to unwind, relax, and reconnect with your inner self. Immerse yourself in daily yoga and meditation sessions led by experienced instructors. Explore mindfulness practices that promote mental and physical well-being. Indulge in healthy and delicious meals that nourish your body and soul. Join us for a transformative experience that leaves you feeling refreshed and revitalized.",
+      "image": "yoga_retreat.jpg",
+      "price": 1200,
+      "duration": "5 Days",
+      "delivery": "In-person"
+    },
+    {
+      "id": 12,
+      "category": "Health and Wellness Retreats",
+      "title": "Nutrition and Healthy Eating Seminar",
+      "description": "Our Nutrition and Healthy Eating Seminar is a valuable resource for individuals looking to make informed choices about their diet and nutrition. Led by registered dietitians and nutrition experts, this seminar covers topics such as balanced meal planning, understanding food labels, and making healthier food choices. Participants will gain practical insights and strategies for maintaining a healthy diet and lifestyle. Whether you're a beginner or looking to fine-tune your nutrition knowledge, this seminar is a step towards a healthier you.",
+      "image": "nutrition_seminar.jpg",
+      "price": 150,
+      "duration": "3 Hours",
+      "delivery": "In-person or Virtual"
+    }
+  ]
+  
