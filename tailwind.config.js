@@ -3,6 +3,11 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   plugins: [require("daisyui")],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        periwinkle: '#4b537e',
+        "periwinkle-light": '#97a8ff',
+      }
+    },
   },
 };

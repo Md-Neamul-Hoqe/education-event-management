@@ -7,36 +7,43 @@ const Navbar = () => {
     <>
       <li>
         <NavLink
-          className="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-          to="#about-section">
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/">
+          Home
+        </NavLink>
+      </li>
+      <li>
+        <NavLink
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/about-section">
           about
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-          to="#service-section">
-          serviece
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/service-section">
+          service
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-          to="#service-section">
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/work-section">
           work
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-          to="#blog-section">
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/blog-section">
           blog
         </NavLink>
       </li>
       <li>
         <NavLink
-          className="hover:border-b-4 active:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400 active:text-yellow-400"
-          to="#contact-section">
+          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+          to="/contact-section">
           contact
         </NavLink>
       </li>
@@ -44,10 +51,10 @@ const Navbar = () => {
   );
 
   return (
-    <nav className="max-w-6xl mx-auto sticky">
-      <div className="navbar">
+    <nav className="relative z-20 bg-gradient-to-t from-[#799553] to-periwinkle-light text-periwinkle">
+      <div className="navbar max-w-6xl mx-auto py-3">
         <div className="navbar-start">
-          <Link className="text-5xl" to="./index.html">
+          <Link className="text-5xl" to="/">
             <FcReading />
           </Link>
         </div>
@@ -58,8 +65,7 @@ const Navbar = () => {
           <button className="btn btn-ghost btn-circle">
             <div className="indicator">
               <AiOutlineShoppingCart />
-              {/* <i className="fas fa-shopping-cart"></i> */}
-              <span className="badge badge-xs badge-primary indicator-item">
+              <span className="badge badge-xs badge-success text-white p-1 indicator-item">
                 8
               </span>
             </div>

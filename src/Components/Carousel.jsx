@@ -1,37 +1,30 @@
-import React from "react";
-
 const Carousel = () => {
   return (
-    <>
+    <section className="absolute top-0">
       <div className="carousel w-full">
+        <div className="hero-overlay absolute bg-opacity-30 pointer-events-none"></div>
         <div id="item1" className="carousel-item w-full">
           <img
-            src="/images/stock/photo-1625726411847-8cbb60cc71e6.jpg"
+            src="./src/assets/STEM Education Programs.jpg"
             className="w-full"
           />
         </div>
         <div id="item2" className="carousel-item w-full">
-          <img
-            src="/images/stock/photo-1609621838510-5ad474b7d25d.jpg"
-            className="w-full"
-          />
+          <img src="./src/assets/education-banner-2-1.jpg" className="w-full" />
         </div>
         <div id="item3" className="carousel-item w-full">
-          <img
-            src="/images/stock/photo-1414694762283-acccc27bca85.jpg"
-            className="w-full"
-          />
+          <img src="./src/assets/training-banner.jpg" className="w-full" />
         </div>
         <div id="item4" className="carousel-item w-full">
           <img
-            src="/images/stock/photo-1665553365602-b2fb8e5d1707.jpg"
+            src="./src/assets/EnSafe-webinar-series-c-scaled.jpg"
             className="w-full"
           />
         </div>
       </div>
 
       {/* Indicators */}
-      <div className="flex justify-center w-full py-2 gap-2">
+      {/* <div className="flex justify-center w-full py-2 gap-2">
         <a href="#item1" className="btn btn-xs">
           1
         </a>
@@ -44,8 +37,8 @@ const Carousel = () => {
         <a href="#item4" className="btn btn-xs">
           4
         </a>
-      </div>
-    </>
+      </div> */}
+    </section>
   );
 };
 
