@@ -4,14 +4,13 @@ import Service from "./Service";
 const Services = () => {
   const [services, setServices] = useState([]);
 
-  // https://youtu.be/dgBmfhh694k
   useEffect(() => {
     fetch("/services.json")
       .then((res) => res.json())
       .then((data) => setServices(data));
   }, []);
   return (
-    <section id="service-section" className="p-5 md:py-28">
+    <section id="service-section" className="p-5 md:py-28 max-w-6xl mx-auto">
       <div className="container flex flex-col items-center">
         <h3 className="font-kaushan-script text-2xl">We work with</h3>
         <h2 className="text-3xl font-bold my-3">AMAZING SERVICES</h2>

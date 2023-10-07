@@ -3,7 +3,6 @@ import { FcRight } from "react-icons/fc";
 import { Link } from "react-router-dom";
 
 const Service = ({ service }) => {
-  console.log(service);
   return (
     <div className="card card-bordered">
       <figure>
@@ -13,6 +12,7 @@ const Service = ({ service }) => {
           alt={service.title}
         />
       </figure>
+
       <div className="card-body">
         <div className="font-bold text-sm mb-5 flex justify-between items-center">
           <span>{service.title}</span> <span>{service.price}$</span>

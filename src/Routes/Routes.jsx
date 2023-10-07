@@ -1,9 +1,11 @@
 import { createBrowserRouter } from "react-router-dom";
 import App from "../App";
-import Error404 from "../error404";
-import Home from "../Home";
-import Details from "../Details";
-import ErrorService from "../ErrorService";
+import Error404 from "../Pages/Error404";
+import Home from "../Pages/Home";
+import Details from "../Pages/Details";
+import ErrorService from "../Pages/ErrorService";
+import BlogPost from "../Components/BlogPost";
+import Register from "../Pages/Register";
 
 const router = createBrowserRouter([
   {
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
         path: "/service/:id",
         element: <Details />,
         errorElement: <ErrorService />,
+      },
+      {
+        path: "/blog/:id",
+        element: <BlogPost />,
+      },
+      {
+        path: "/register",
+        element: <Register />,
       },
     ],
   },

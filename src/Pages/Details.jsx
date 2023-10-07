@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "./Components/Navbar";
+import Navbar from "../Components/Navbar";
 
 const Details = () => {
   const { id } = useParams();
@@ -49,7 +49,7 @@ const Details = () => {
 
           <div className="card-actions py-5 flex justify-end">
             <Link className="btn text-xl bg-yellow-400 font-bold">
-              {theService.delivery == "Virtual" ? "Buy Now" : "Sit Booking"}
+              {theService.delivery == "Virtual" ? "Buy Now" : "Book Now"}
             </Link>
           </div>
         </div>
