@@ -3,18 +3,18 @@
     "title": "Mathematics Workshop for Educators",
     "date": "November 15-17, 2023",
     "description": "Join us for a three-day workshop designed for educators seeking innovative teaching methods and strategies in mathematics. Explore new pedagogical approaches and network with fellow educators.",
-    "image": "/src/assets/card/Career Fair Promotion.jpg"
+    "image": "/src/assets/upcomingevents/Career-Fair-Promo.jpg"
   },
   {
     "title": "Annual Math Challenge Competition",
     "date": "February 5, 2024",
     "description": "Test your math skills and compete with students from across the region in our annual math challenge competition. Cash prizes and certificates will be awarded to the top performers.",
-    "image": "assets/images/event2.jpg"
+    "image": "/src/assets/upcomingevents/Annual Math Challenge Competition.jpg"
   },
   {
     "title": "Math in the Real World Symposium",
     "date": "April 20-22, 2024",
     "description": "Dive into the practical applications of mathematics in various industries. Renowned mathematicians and industry experts will share insights on how math is shaping the real world.",
-    "image": "assets/images/event3.jpg"
+    "image": "/src/assets/upcomingevents/Math in the Real World Symposium.jpg"
   }
 ]

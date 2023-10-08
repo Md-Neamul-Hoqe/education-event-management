@@ -2,25 +2,25 @@
   {
     "name": "Ali Khan",
     "profession": "Math Teacher at New York High School",
-    "userImage": "/src/assets/users/user-1.png",
+    "userImage": "https://i.ibb.co/7vx2MGG/user-1.png",
     "comment": "As a math teacher at New York High School, I can confidently say that the 'Geometry for Educators' workshop was outstanding. It equipped me with advanced teaching techniques and resources to engage my students effectively."
   },
   {
     "name": "Omar Ahmed",
     "profession": "Student at Boston University",
-    "userImage": "/src/assets/users/user-2.png",
+    "userImage": "https://i.ibb.co/28vBqxr/user-2.jpg",
     "comment": "Attending the 'Math Olympiad Preparation Camp' was a dream come true. The coaches were brilliant, and the camp's intensive training improved my math skills immensely."
   },
   {
     "name": "Hassan Mahmood",
     "profession": "Educator at London Academy",
-    "userImage": "/src/assets/users/user-3.png",
+    "userImage": "https://i.ibb.co/WFhJcTx/user-3.png",
     "comment": "I've been an educator at London Academy for over a decade, and the 'Effective Math Pedagogy' workshop elevated my teaching to new heights. The innovative strategies shared were a game-changer."
   },
   {
     "name": "Yusuf Ali",
     "profession": "Engineer at Silicon Valley Tech",
-    "userImage": "/src/assets/users/user-1.png",
+    "userImage": "https://i.ibb.co/7vx2MGG/user-1.png",
     "comment": "The 'Mathematics Art and Creativity Workshop' was a revelation for me. It showed how math and art can beautifully merge. I'm now using these insights in my engineering projects at Silicon Valley Tech."
   }
 ]

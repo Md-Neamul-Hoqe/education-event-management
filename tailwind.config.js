@@ -4,10 +4,13 @@ export default {
   plugins: [require("daisyui")],
   theme: {
     extend: {
-      colors:{
-        periwinkle: '#4b537e',
-        "periwinkle-light": '#97a8ff',
-      }
+      colors: {
+        periwinkle: "#4b537e",
+        "periwinkle-light": "#97a8ff",
+      },
+      fontFamily: {
+        "kaushan-script": '"Kaushan Script", cursive',
+      },
     },
   },
 };

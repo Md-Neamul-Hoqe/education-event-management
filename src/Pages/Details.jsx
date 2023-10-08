@@ -37,10 +37,16 @@ const Details = () => {
         <div className="card-body">
           <div className="border border-yellow-400 bg-periwinkle/5 text-periwinkle p-4 rounded-box">
             <div className="flex gap-2 items-center text-xl">
-              <h2 className="font-bold">Duration: </h2>
-              <p> {theService.duration}</p>
-              <h2 className="font-bold">Delivery: </h2>
-              <p> {theService.delivery}</p>
+              <h2 className="font-bold">Date: </h2>
+              <p> {theService.date}</p>
+              <h2 className="font-bold">Location: </h2>
+              <p> {theService.location}</p>
+            </div>
+            <div className="flex gap-2 items-center text-xl">
+              <h2 className="font-bold">Capacity: </h2>
+              <p> {theService.participants}</p>
+              <h2 className="font-bold">Type: </h2>
+              <p> {theService.category}</p>
             </div>
           </div>
           <p className="text-xl text-periwinkle leading-relaxed first-letter:text-6xl first-letter:text-yellow-400">
@@ -49,7 +55,7 @@ const Details = () => {
 
           <div className="card-actions py-5 flex justify-end">
             <Link className="btn text-xl bg-yellow-400 font-bold">
-              {theService.delivery == "Virtual" ? "Buy Now" : "Book Now"}
+              {theService.budget && "Book Now"}
             </Link>
           </div>
         </div>

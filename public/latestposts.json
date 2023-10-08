@@ -1,7 +1,7 @@
 [
   {
     "title": "The Role of Fibonacci Numbers in Nature",
-    "image": "/src/assets/images/fibonacci.jpg",
+    "image": "https://i.ibb.co/rwYR90p/fibonacci.jpg",
     "description": "Explore the fascinating connection between Fibonacci numbers and natural patterns, from seashells to sunflowers.",
     "viewCount": 1897,
     "commentCount": 42,
@@ -9,7 +9,7 @@
   },
   {
     "title": "Cryptocurrency: Decoding the Blockchain Revolution",
-    "image": "/src/assets/images/cryptocurrency.jpg",
+    "image": "https://i.ibb.co/cT5KKDx/cryptocurrency.jpg",
     "description": "Dive into the world of cryptocurrencies and understand the technology behind blockchain that's changing finance and beyond.",
     "viewCount": 2563,
     "commentCount": 67,
@@ -17,7 +17,7 @@
   },
   {
     "title": "The Beauty of Chaos Theory in Mathematics",
-    "image": "/src/assets/images/chaos.jpg",
+    "image": "https://i.ibb.co/LpbM3mJ/chaos.webp",
     "description": "Delve into the chaos theory and discover how seemingly random systems can exhibit beautiful and deterministic patterns.",
     "viewCount": 1578,
     "commentCount": 33,
@@ -25,7 +25,7 @@
   },
   {
     "title": "Artificial Intelligence: From Sci-Fi to Reality",
-    "image": "/src/assets/images/ai.jpg",
+    "image": "https://i.ibb.co/QFMq9pf/ai.jpg",
     "description": "Learn about the evolution of artificial intelligence, its current applications, and its potential impact on society.",
     "viewCount": 3201,
     "commentCount": 91,
@@ -33,7 +33,7 @@
   },
   {
     "title": "The Magic of Prime Numbers in Cryptography",
-    "image": "/src/assets/images/primes.jpg",
+    "image": "https://i.ibb.co/8MSX7Zh/primes.jpg",
     "description": "Uncover the crucial role of prime numbers in securing online communications and data privacy through encryption.",
     "viewCount": 1423,
     "commentCount": 28,

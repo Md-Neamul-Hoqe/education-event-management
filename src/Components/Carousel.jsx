@@ -5,21 +5,21 @@ const Carousel = () => {
         <div className="hero-overlay absolute inset-0 bg-opacity-30 pointer-events-none"></div>
         <div id="item4" className="carousel-item w-full">
           <img
-            src="./src/assets/EnSafe-webinar-series-c-scaled.jpg"
+            src="https://i.ibb.co/tpd93NX/education-banner-2-1.jpg"
             className="w-full"
           />
         </div>
         <div id="item1" className="carousel-item w-full">
           <img
-            src="./src/assets/STEM Education Programs.jpg"
+            src="https://i.ibb.co/VMKRCvY/En-Safe-webinar-series-c-scaled.jpg"
             className="w-full"
           />
         </div>
         <div id="item2" className="carousel-item w-full">
-          <img src="./src/assets/education-banner-2-1.jpg" className="w-full" />
+          <img src="https://i.ibb.co/Qc7n1jb/STEM-Education-Programs.jpg" className="w-full" />
         </div>
         <div id="item3" className="carousel-item w-full">
-          <img src="./src/assets/training-banner.jpg" className="w-full" />
+          <img src="https://i.ibb.co/nn8b2Nv/training-banner.jpg" className="w-full" />
         </div>
       </div>
 

@@ -6,7 +6,7 @@ import { AuthContext } from "../Providers/AuthProvider";
 import userDefaultImg from "../assets/logo/user.png";
 
 const Navbar = () => {
-  const { user, logOutUser } = useContext(AuthContext);
+  const { user, logOut } = useContext(AuthContext);
 
   const NavLinks = (
     <>
@@ -20,8 +20,8 @@ const Navbar = () => {
       <li>
         <NavLink
           className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/about-section">
-          about
+          to="/blog">
+          Blog
         </NavLink>
       </li>
       <li>
@@ -34,7 +34,7 @@ const Navbar = () => {
       <li>
         <NavLink
           className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/contact-section">
+          to="/contact">
           contact
         </NavLink>
       </li>
@@ -100,7 +100,7 @@ const Navbar = () => {
             </div>
           </div>
           {user ? (
-            <button onClick={logOutUser} className="btn">
+            <button onClick={logOut} className="btn">
               {user.displayName}
             </button>
           ) : (

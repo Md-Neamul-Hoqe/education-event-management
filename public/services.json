@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Exploring Algebraic Equations",
+    "image": "https://i.ibb.co/YtSGK3Y/Exploring-Algebraic-Equations.jpg",
     "category": "Mathematics Workshop",
     "budget": 5000,
     "facilitator": "Dr. Sarah Johnson",
@@ -13,6 +14,7 @@
   {
     "id": 2,
     "title": "Geometry for Educators",
+    "image": "https://i.ibb.co/wNQ1h5v/Geometry-for-Educators.jpg",
     "category": "Mathematics Workshop",
     "budget": 7500,
     "facilitator": "Prof. Mark Anderson",
@@ -24,6 +26,7 @@
   {
     "id": 3,
     "title": "Mathematical Modeling for Beginners",
+    "image": "https://i.ibb.co/qF0fsgG/Mathematical-Modeling-for-Beginners.webp",
     "category": "Mathematics Workshop",
     "budget": 4500,
     "facilitator": "Dr. David Ramirez",
@@ -35,6 +38,7 @@
   {
     "id": 4,
     "title": "Effective Math Pedagogy",
+    "image": "https://i.ibb.co/6XDcgzF/Pedagogy-of-Mathematics.png",
     "category": "Teacher Training Workshop",
     "budget": 6000,
     "facilitator": "Dr. Emily White",
@@ -46,6 +50,7 @@
   {
     "id": 5,
     "title": "Curriculum Development in Mathematics",
+    "image": "https://i.ibb.co/2M6s9PS/Curriculum-Development-in-Mathematics.webp",
     "category": "Teacher Training Workshop",
     "budget": 8500,
     "facilitator": "Prof. Michael Lee",
@@ -57,6 +62,7 @@
   {
     "id": 6,
     "title": "Math Assessment Strategies",
+    "image": "https://i.ibb.co/vd7DmgY/Math-Assessment-Strategies.webp",
     "category": "Teacher Training Workshop",
     "budget": 4800,
     "facilitator": "Dr. Susan Clark",
@@ -68,6 +74,7 @@
   {
     "id": 7,
     "title": "Advanced Number Theory Workshop",
+    "image": "https://i.ibb.co/GFg78TR/Advanced-Number-Theory-Workshop.jpg",
     "category": "Mathematics Enrichment Workshop",
     "budget": 9000,
     "facilitator": "Prof. James Turner",
@@ -79,6 +86,7 @@
   {
     "id": 8,
     "title": "Math Olympiad Preparation Camp",
+    "image": "https://i.ibb.co/pQ694St/Math-Olympiad-Preparation-Camp.png",
     "category": "Mathematics Enrichment Workshop",
     "budget": 12000,
     "facilitator": "Math Olympiad Coaches",
@@ -90,6 +98,7 @@
   {
     "id": 9,
     "title": "Mathematics Art and Creativity Workshop",
+    "image": "https://i.ibb.co/fHG02xM/Mathematics-Art-and-Creativity-Workshop.webp",
     "category": "Mathematics Enrichment Workshop",
     "budget": 6500,
     "facilitator": "Dr. Maria Garcia",

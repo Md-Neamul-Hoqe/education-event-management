@@ -4,8 +4,8 @@ import Error404 from "../Pages/Error404";
 import Home from "../Pages/Home";
 import Details from "../Pages/Details";
 import ErrorService from "../Pages/ErrorService";
-// import BlogPost from "../Components/BlogPost";
 import Register from "../Pages/Register";
+import Login from "../Pages/Login";
 import Blog from "../Pages/Blog";
 import Conversation from "../Pages/Conversation";
 
@@ -31,6 +31,10 @@ const router = createBrowserRouter([
       {
         path: "/conversation", /* extra private route */
         element: <Conversation />,
+      },
+      {
+        path: "/login",
+        element: <Login />,
       },
       {
         path: "/register",

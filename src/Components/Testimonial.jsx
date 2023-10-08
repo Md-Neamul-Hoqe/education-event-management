@@ -9,9 +9,9 @@ const Testimonial = () => {
       .then((data) => setTestimonials(data));
   }, []);
   return (
-    <section id="comment-section">
+    <section>
       <div className="bg-gray-200/75">
-        <div className="container flex flex-col items-center py-28">
+        <div className="flex flex-col items-center py-28 max-w-6xl mx-auto">
           <h3 className="font-kaushan-script text-2xl">Happy Client</h3>
           <h2 className="text-3xl font-bold my-3">WHAT PEOPLE SAY</h2>
           <hr className="bg-yellow-400 h-1 w-16 my-7" />
@@ -20,8 +20,8 @@ const Testimonial = () => {
               const { name, profession, userImage, comment } = testimonial;
               return (
                 <div key={idx} className="card card-side">
-                  <figure className="min-w-max">
-                    <img src={userImage} alt={name} />
+                  <figure className="flex items-end min-w-min">
+                    <img src={userImage} alt={name} className="w-20 h-20 rounded-full" />
                   </figure>
                   <div className="card-body">
                     <div className="card-title flex flex-col items-start">
