@@ -147,7 +147,7 @@ console.log(count);
 - C: 3
 - D: 4
 
-<details open><summary><b>Answer</b></summary>
+<details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
