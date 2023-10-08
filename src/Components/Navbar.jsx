@@ -89,20 +89,25 @@ const Navbar = () => {
             <i className="fas fa-search"></i>
           </button>
         </div>
-        <div className="navbar-end">
-          <div className="avatar">
-            <div className="w-12 rounded-full">
-              {/* <div className="w-12 rounded-full ring ring-dark ring-offset-base-100 ring-offset-2"> */}
-              <img
-                src={user?.photoURL || userDefaultImg}
-                alt={user && user.displayName}
-              />
-            </div>
-          </div>
+        <div onClick={logOut} className="navbar-end">
           {user ? (
-            <button onClick={logOut} className="btn">
-              {user.displayName}
-            </button>
+            (console.log(user),
+            (
+              <>
+                <div className="avatar mr-2">
+                  <div className="w-12 rounded-full">
+                    {/* <div className="w-12 rounded-full ring ring-dark ring-offset-base-100 ring-offset-2"> */}
+                    <img
+                      src={user?.photoURL || userDefaultImg}
+                      alt={user && user?.displayName}
+                    />
+                  </div>
+                </div>
+                <button className="btn">
+                  {user?.displayName || user?.email?.split("@")[0]}
+                </button>
+              </>
+            ))
           ) : (
             <Link
               className="btn ms-3 px-10 rounded-none bg-yellow-400 text-periwinkle border-none"

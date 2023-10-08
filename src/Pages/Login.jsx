@@ -12,6 +12,7 @@ const Login = () => {
 
   const handleLogin = (e) => {
     e.preventDefault();
+    setError("");
 
     // console.log(e.currentTarget);
 
@@ -25,10 +26,17 @@ const Login = () => {
       .then((result) => {
         createUser(result.user);
 
+        console.log(location);
         /* navigate after login */
         navigate(location?.state ? location.state : "/");
       })
-      .catch((error) => setError(error));
+      .catch((error) => {
+        console.log(error.code, error.name, error.stack, error.message);
+        console.table(error.customData);
+
+        // console.log(error.slice(37));
+        return setError(error.message);
+      });
   };
 
   return (
@@ -86,10 +94,7 @@ const Login = () => {
               </Link>
             </div>
 
-            <div className="flex items-center justify-between my-2">
-              <hr className="h-1 bg-periwinkle w-1/3" /> Or{" "}
-              <hr className="h-1 bg-periwinkle w-1/3" />
-            </div>
+            <div className="divider">OR</div>
             <Link
               onClick={signInWithGoogle}
               className="flex justify-center w-full border rounded-2xl py-3 text-3xl">

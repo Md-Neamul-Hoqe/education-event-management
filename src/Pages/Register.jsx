@@ -5,21 +5,27 @@ import { AuthContext } from "../Providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 
 const Register = () => {
-  const { createUser, error, setError, signInWithGoogle } = useContext(AuthContext);
+  const { createUser, error, setError, signInWithGoogle } =
+    useContext(AuthContext);
 
   const handleRegister = (e) => {
     e.preventDefault();
 
     const Form = new FormData(e.currentTarget);
     const email = Form.get("email");
+    const password = Form.get("password");
     const name = Form.get("name");
     const check = Form.get("check");
-    const password = Form.get("password");
 
     /* Verifications */
     setError("");
+
     if (password.length < 6)
       return setError("Give a password with minimum 6 characters long.");
+    else if (/[A-Z]/.test(password))
+      return setError("Please use at lease a uppercase character.");
+    else if (/[^a-zA-Z0-9]/.test(password))
+      return setError("Please use at least a special character.");
 
     console.log(name, email, password, check);
 
@@ -76,7 +82,12 @@ const Register = () => {
               />
             </div>
             <div className="form-control mt-6 flex flex-row gap-2 text-base">
-              <input type="checkbox" name="check" id="check" required />{" "}
+              <input
+                type="checkbox"
+                name="check"
+                className="toggle toggle-warning"
+                required
+              />
               <span className=" text-gray">Accept Terms & Conditions</span>
             </div>
             <div className="form-control mt-6">
@@ -92,11 +103,10 @@ const Register = () => {
               </Link>
             </div>
 
-            <div className="flex items-center justify-between my-2">
-              <hr className="h-1 bg-periwinkle w-1/3" /> Or{" "}
-              <hr className="h-1 bg-periwinkle w-1/3" />
-            </div>
-            <Link onClick={signInWithGoogle} className="flex justify-center w-full border rounded-2xl py-3 text-3xl">
+            <div className="divider">OR</div>
+            <Link
+              onClick={signInWithGoogle}
+              className="flex justify-center w-full border rounded-2xl py-3 text-3xl">
               <FcGoogle />{" "}
               <span className="text-xl ms-3 font-semibold capitalize">
                 Sign in with google
@@ -108,6 +118,15 @@ const Register = () => {
               ""
             )}
           </form>
+
+          {/* <div className="toast toast-top toast-center">
+            <div className="alert alert-info">
+              <span>New mail arrived.</span>
+            </div>
+            <div className="alert alert-success">
+              <span>Message sent successfully.</span>
+            </div>
+          </div> */}
         </div>
       </div>
     </section>
