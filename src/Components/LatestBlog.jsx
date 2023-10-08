@@ -12,8 +12,8 @@ const LatestBlog = () => {
   return (
     <section>
       <div className="container flex flex-col items-center py-28">
-        <h3 className="font-kaushan-script text-2xl">Our Stories</h3>
-        <h2 className="text-3xl font-bold my-3">LATEST BLOG</h2>
+        <h3 className="font-kaushan-script lg:text-2xl text-lg">Our Stories</h3>
+        <h2 className="text-xl lg:text-3xl font-bold my-3">LATEST BLOG</h2>
         <hr className="bg-[#f38181] h-1 w-16 my-7" />
         <p className="w-10/12 text-center mb-32">
           We post here some new concept of us.
@@ -37,7 +37,7 @@ const LatestBlog = () => {
                       <h3 className="text-5xl font-bold">
                         {postOn.slice(0, 2)}
                       </h3>
-                      <h6 className="font-roboto italic block">
+                      <h6 className="italic block">
                         {postOn.slice(3)}
                       </h6>
                     </div>
@@ -50,7 +50,7 @@ const LatestBlog = () => {
                 </figure>
                 <div className="card-body items-start w-full">
                   <h2>{title}</h2>
-                  <p className="text-gray-400 font-roboto">{description}</p>
+                  <p className="text-gray-400">{description}</p>
                   <hr className="w-full bg-gray-400 my-5" />
                   <div className="flex gap-3 text-gray-400 items-center">
                     <i className="fa fa-eye text-[#95E1D3]"></i> {viewCount}{" "}

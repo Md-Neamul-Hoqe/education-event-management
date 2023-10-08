@@ -12,8 +12,8 @@ const Services = () => {
   return (
     <section id="service-section" className="p-5 md:py-28 max-w-6xl mx-auto">
       <div className="container flex flex-col items-center">
-        <h3 className="font-kaushan-script text-2xl">We work with</h3>
-        <h2 className="text-3xl font-bold my-3">AMAZING SERVICES</h2>
+        <h3 className="font-kaushan-script lg:text-2xl text-lg">We work with</h3>
+        <h2 className="text-xl lg:text-3xl font-bold my-3">AMAZING SERVICES</h2>
 
         <hr className="bg-yellow-400 h-1 w-16 my-7" />
 

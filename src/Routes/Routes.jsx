@@ -8,6 +8,7 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import Blog from "../Pages/Blog";
 import Conversation from "../Pages/Conversation";
+import PrivateRoutes from "./PrivateRoutes";
 
 const router = createBrowserRouter([
   {
@@ -20,17 +21,29 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "/service/:id", /* private */
-        element: <Details />,
+        path: "/service/:id" /* private */,
+        element: (
+          <PrivateRoutes>
+            <Details />
+          </PrivateRoutes>
+        ),
         errorElement: <ErrorService />,
       },
       {
-        path: "/blog", /* extra private route */
-        element: <Blog />,
+        path: "/blog" /* extra private route */,
+        element: (
+          <PrivateRoutes>
+            <Blog />
+          </PrivateRoutes>
+        ),
       },
       {
-        path: "/conversation", /* extra private route */
-        element: <Conversation />,
+        path: "/conversation" /* extra private route */,
+        element: (
+          <PrivateRoutes>
+            <Conversation />
+          </PrivateRoutes>
+        ),
       },
       {
         path: "/login",

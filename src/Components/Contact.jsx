@@ -2,8 +2,8 @@ const Contact = () => {
   return (
     <section id="contact-section">
       <div className="container flex flex-col items-center py-28">
-        <h3 className="font-kaushan-script text-2xl">Who we are</h3>
-        <h2 className="text-3xl font-bold my-3">MEET OUR TEAM</h2>
+        <h3 className="font-kaushan-script lg:text-2xl text-lg">Who we are</h3>
+        <h2 className="text-xl lg:text-3xl font-bold my-3">MEET OUR TEAM</h2>
         <hr className="bg-[#f38181] h-1 w-16 my-7" />
         <p className="w-10/12 text-center mb-5 sm:mb-32">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do

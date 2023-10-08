@@ -31,13 +31,6 @@ const Navbar = () => {
           Conversation
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/contact">
-          contact
-        </NavLink>
-      </li>
     </>
   );
 
@@ -89,28 +82,28 @@ const Navbar = () => {
             <i className="fas fa-search"></i>
           </button>
         </div>
-        <div onClick={logOut} className="navbar-end">
-          {user ? (
-            (console.log(user),
-            (
-              <>
-                <div className="avatar mr-2">
-                  <div className="w-12 rounded-full">
-                    {/* <div className="w-12 rounded-full ring ring-dark ring-offset-base-100 ring-offset-2"> */}
-                    <img
-                      src={user?.photoURL || userDefaultImg}
-                      alt={user && user?.displayName}
-                    />
-                  </div>
+        <div className="navbar-end">
+          {user && Object.keys(user).length > 0 ? (
+            <>
+              <div className="avatar mr-2">
+                <div className="w-12 rounded-full">
+                  {/* <div className="w-12 rounded-full ring ring-dark ring-offset-base-100 ring-offset-2"> */}
+                  <img
+                    src={user?.photoURL || userDefaultImg}
+                    alt={user && user?.displayName}
+                  />
                 </div>
-                <button className="btn">
-                  {user?.displayName || user?.email?.split("@")[0]}
-                </button>
-              </>
-            ))
+              </div>
+              <button className="font-bold mr-2 max-md:hidden">
+                {user?.displayName || user?.email?.split("@")[0]}
+              </button>
+              <button onClick={logOut} className="btn">
+                Log Out
+              </button>
+            </>
           ) : (
             <Link
-              className="btn ms-3 px-10 rounded-none bg-yellow-400 text-periwinkle border-none"
+              className="btn btn-warning ms-3 px-10 rounded-none text-periwinkle border-none"
               to="/login">
               Login
             </Link>

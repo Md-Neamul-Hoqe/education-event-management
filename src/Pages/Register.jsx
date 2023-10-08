@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
+import { ToastContainer, toast } from "react-toastify";
 
 const Register = () => {
   const { createUser, error, setError, signInWithGoogle } =
@@ -14,27 +15,28 @@ const Register = () => {
     const Form = new FormData(e.currentTarget);
     const email = Form.get("email");
     const password = Form.get("password");
-    const name = Form.get("name");
-    const check = Form.get("check");
+    // const name = Form.get("name");
+    // const check = Form.get("check");
 
     /* Verifications */
     setError("");
 
     if (password.length < 6)
       return setError("Give a password with minimum 6 characters long.");
-    else if (/[A-Z]/.test(password))
+    else if (!/[A-Z]/.test(password))
       return setError("Please use at lease a uppercase character.");
-    else if (/[^a-zA-Z0-9]/.test(password))
+    else if (!/[^a-zA-Z0-9]/.test(password))
       return setError("Please use at least a special character.");
-
-    console.log(name, email, password, check);
 
     createUser(email, password)
       .then((res) => {
-        console.log(res.user);
+        console.log(res);
+        res && notify();
       })
-      .catch((error) => console.error(error));
+      .catch((error) => setError(error));
   };
+
+  const notify = () => toast("Registered successfully.");
 
   return (
     <section className="bg-base-200 font-poppins">
@@ -129,6 +131,7 @@ const Register = () => {
           </div> */}
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };

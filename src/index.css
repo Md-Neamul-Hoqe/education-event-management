@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  box-sizing: border-box;
+}
+
 h1,
 h2,
 h3,
@@ -19,4 +23,9 @@ h6 {
 
 .btn {
   @apply capitalize;
+}
+
+body {
+  @apply max-md:bg-gray-800;
+  @apply max-md:text-white;
 }

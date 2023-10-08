@@ -3,10 +3,14 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
 import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
+import { ToastContainer, toast } from "react-toastify";
 
 const Login = () => {
-  const { signIn, createUser, error, setError, signInWithGoogle } =
+  const { user, signIn, createUser, error, setError, signInWithGoogle } =
     useContext(AuthContext);
+
+  const notify = () => toast("Logged in successfully.");
+
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -14,27 +18,21 @@ const Login = () => {
     e.preventDefault();
     setError("");
 
-    // console.log(e.currentTarget);
-
     const Form = new FormData(e.currentTarget);
     const email = Form.get("email");
     // const photo = Form.get("photo");
     const password = Form.get("password");
 
-    console.log(email, password);
     signIn(email, password)
       .then((result) => {
         createUser(result.user);
 
-        console.log(location);
         /* navigate after login */
         navigate(location?.state ? location.state : "/");
       })
       .catch((error) => {
-        console.log(error.code, error.name, error.stack, error.message);
         console.table(error.customData);
 
-        // console.log(error.slice(37));
         return setError(error.message);
       });
   };
@@ -44,7 +42,12 @@ const Login = () => {
       <Navbar />
       <div className="hero min-h-screen">
         <div className="card w-full max-w-lg bg-white">
-          <form onSubmit={handleLogin} className="card-body">
+          <form
+            onSubmit={() => {
+              handleLogin();
+              user && notify();
+            }}
+            className="card-body">
             <h2 className="text-2xl text-center text-dark font-semibold">
               Login your account
             </h2>
@@ -96,7 +99,10 @@ const Login = () => {
 
             <div className="divider">OR</div>
             <Link
-              onClick={signInWithGoogle}
+              onClick={() => {
+                signInWithGoogle();
+                user && notify();
+              }}
               className="flex justify-center w-full border rounded-2xl py-3 text-3xl">
               <FcGoogle />{" "}
               <span className="text-xl ms-3 font-semibold capitalize">
@@ -112,6 +118,7 @@ const Login = () => {
           </form>
         </div>
       </div>
+      <ToastContainer />
     </section>
   );
 };
