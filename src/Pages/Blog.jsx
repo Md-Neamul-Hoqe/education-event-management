@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const LatestBlog = () => {
+const Blog = () => {
   const [posts, setPosts] = useState([]);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const LatestBlog = () => {
           We post here some new concept of us.
         </p>
         <div className="flex justify-between flex-col xl:flex-row">
-          {posts.slice(0, 3).map((post, idx) => {
+          {posts.map((post, idx) => {
             const {
               image,
               title,
@@ -67,4 +67,4 @@ const LatestBlog = () => {
   );
 };
 
-export default LatestBlog;
+export default Blog;

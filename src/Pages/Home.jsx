@@ -5,7 +5,9 @@ import { Helmet } from "react-helmet-async";
 import Carousel from "../Components/Carousel";
 import Services from "../Components/Services";
 import Footer from "../Components/Footer";
-import LatestBlog from '../Components/LatestBlog';
+import UpComing from "../Components/UpComing";
+// import LatestBlog from "../Components/LatestBlog";
+import Testimonial from "../Components/Testimonial";
 
 AOS.init();
 
@@ -13,10 +15,21 @@ const Home = () => {
   return (
     <>
       <Navbar />
+
       <Carousel />
+
+      {/* Extra section */}
+      <UpComing />
+
       <Services />
-      <LatestBlog/>
+
+      {/* Extra section */}
+      <Testimonial />
+      {/* <LatestBlog /> */}
+
       <Footer />
+
+      {/* Title of the page */}
       <Helmet>
         <title>Education Care | Home</title>
       </Helmet>

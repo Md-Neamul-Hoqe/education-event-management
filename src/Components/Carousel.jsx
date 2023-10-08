@@ -1,8 +1,14 @@
 const Carousel = () => {
   return (
     <section>
-      <div className="carousel w-full">
-        <div className="hero-overlay absolute bg-opacity-30 pointer-events-none"></div>
+      <div className="carousel w-full max-h-[calc(100vh-72px)]">
+        <div className="hero-overlay absolute inset-0 bg-opacity-30 pointer-events-none"></div>
+        <div id="item4" className="carousel-item w-full">
+          <img
+            src="./src/assets/EnSafe-webinar-series-c-scaled.jpg"
+            className="w-full"
+          />
+        </div>
         <div id="item1" className="carousel-item w-full">
           <img
             src="./src/assets/STEM Education Programs.jpg"
@@ -14,12 +20,6 @@ const Carousel = () => {
         </div>
         <div id="item3" className="carousel-item w-full">
           <img src="./src/assets/training-banner.jpg" className="w-full" />
-        </div>
-        <div id="item4" className="carousel-item w-full">
-          <img
-            src="./src/assets/EnSafe-webinar-series-c-scaled.jpg"
-            className="w-full"
-          />
         </div>
       </div>
 
