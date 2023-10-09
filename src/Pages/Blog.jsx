@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import Navbar from "../Components/Navbar";
 import { AiOutlineEye } from "react-icons/ai";
 import { FaRegCommentDots } from "react-icons/fa6";
 
@@ -14,7 +13,6 @@ const Blog = () => {
 
   return (
     <section>
-      <Navbar />
       <div className="container flex flex-col items-center py-28 max-w-6xl mx-auto">
         <h3 className="font-kaushan-script lg:text-2xl text-lg">Our Stories</h3>
         <h2 className="text-xl lg:text-3xl font-bold my-3">LATEST BLOG</h2>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link, useParams } from "react-router-dom";
-import Navbar from "../Components/Navbar";
+import { ToastContainer, toast } from "react-toastify";
 
 const Details = () => {
   const { id } = useParams();
@@ -19,7 +19,6 @@ const Details = () => {
 
   return (
     <>
-      <Navbar />
       <Helmet>
         <title>{"Education Care | " + theService.title}</title>
       </Helmet>
@@ -54,12 +53,15 @@ const Details = () => {
           </p>
 
           <div className="card-actions py-5 flex justify-end">
-            <Link className="btn text-xl bg-yellow-400 font-bold">
+            <Link
+              onClick={() => toast("The ticket is booked successfully.")}
+              className="btn text-xl bg-yellow-400 font-bold">
               {theService.budget && "Book Now"}
             </Link>
           </div>
         </div>
       </div>
+      <ToastContainer />
     </>
   );
 };

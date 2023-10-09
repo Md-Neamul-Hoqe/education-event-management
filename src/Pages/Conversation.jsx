@@ -1,4 +1,3 @@
-import Navbar from "../Components/Navbar";
 import { useContext, useState } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import userDefaultImg from "../assets/logo/user.png";
@@ -19,8 +18,6 @@ const Conversation = () => {
   };
   return (
     <>
-      <Navbar />
-
       <div className="card flex-shrink-0 w-full max-w-xl shadow-2xl max-md:text-white text-periwinkle mx-auto lg:my-10">
         <form onSubmit={handleConversation} className="card-body">
           <div className="form-control">

@@ -9,7 +9,8 @@ This is an event management project specially educational events. Here we displa
 - [Styles](#Design)
 - [Login Options](#Login-Options)
 - [Authentication System](#Authentication-System)
-- [Conversation](#Conversation)
+- [Conversation Page Features](#Conversation-Page-Features)
+- [Blog Page Features](#Blog-Page-Features)
 
 ## Home Page Features
 
@@ -31,6 +32,13 @@ Here we use email-password login system with google sign in system. User can reg
 
 We use [firebase](https://firebase.google.com/) to check users authentication.And our site also host in this hosting provider.
 
-## Conversation
+## Conversation Page Features
 
 Our user can converse with us directly via conversation page. They can take any support or get any information about our event management system on live.
+
+## Blog Page Features
+
+In our blog page we deliver our contents relative to our educational events every day. User informed up to date news of the latest events & offers via this page.
+
+
+> [questions and answers](/questions_and_answers.md)

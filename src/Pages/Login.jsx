@@ -1,7 +1,6 @@
 import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../Providers/AuthProvider";
-import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
 
@@ -43,7 +42,6 @@ const Login = () => {
 
   return (
     <section>
-      <Navbar />
       <div className="hero min-h-screen">
         <div className="card w-full max-w-lg lg:bg-white">
           <form onSubmit={handleLogin} className="card-body">

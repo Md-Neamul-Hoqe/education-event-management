@@ -1,5 +1,4 @@
 import { Link, useNavigate } from "react-router-dom";
-import Navbar from "../Components/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
@@ -45,8 +44,7 @@ const Register = () => {
   };
 
   return (
-    <section className="font-poppins">
-      <Navbar />
+    <section>
       <div className="hero min-h-screen">
         <div className="card w-full max-w-xl lg:bg-white">
           <form onSubmit={handleRegister} className="card-body">
