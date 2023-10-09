@@ -30,12 +30,12 @@ const Testimonial = () => {
                   <div className="card-body">
                     <div className="card-title flex flex-col items-start">
                       <h4>{name}</h4>
-                      <small className="text-gray-400 italic">
+                      <small className="max-md:text-white text-gray-400 italic">
                         {profession}
                       </small>
                       <hr className="bg-yellow-400 h-1 w-16 my-3 max-sm:mx-auto" />
                     </div>
-                    <p className="text-gray-400 sm:w-8/12 xl:w-11/12">
+                    <p className="max-md:text-white text-gray-400 sm:w-8/12 xl:w-11/12">
                       {comment}
                     </p>
                   </div>
