@@ -1,13 +1,16 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Components/Navbar";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Register = () => {
   const { createUser, error, setError, signInWithGoogle } =
     useContext(AuthContext);
+
+  const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
@@ -29,20 +32,23 @@ const Register = () => {
       return setError("Please use at least a special character.");
 
     createUser(email, password)
-      .then((res) => {
-        console.log(res);
-        res && notify();
+      .then(() => {
+        console.log(location?.state);
+        e.target.reset();
+
+        toast("Your Registration is Completed.");
+
+        /* navigate after Registration */
+        location?.state && navigate(location?.state);
       })
       .catch((error) => setError(error));
   };
 
-  const notify = () => toast("Registered successfully.");
-
   return (
-    <section className="bg-base-200 font-poppins">
+    <section className="font-poppins">
       <Navbar />
       <div className="hero min-h-screen">
-        <div className="card w-full max-w-xl bg-white">
+        <div className="card w-full max-w-xl lg:bg-white">
           <form onSubmit={handleRegister} className="card-body">
             <h2 className="text-2xl text-center text-dark font-semibold">
               Register a new account
@@ -50,7 +56,9 @@ const Register = () => {
             <hr className="my-5 text-light" />
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-semibold">Your Name</span>
+                <span className="label-text max-md:text-white font-semibold">
+                  Your Name
+                </span>
               </label>
               <input
                 type="text"
@@ -61,7 +69,9 @@ const Register = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-semibold">Email Address</span>
+                <span className="label-text max-md:text-white font-semibold">
+                  Email Address
+                </span>
               </label>
               <input
                 type="email"
@@ -73,7 +83,9 @@ const Register = () => {
             </div>
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-semibold">Password</span>
+                <span className="label-text max-md:text-white font-semibold">
+                  Password
+                </span>
               </label>
               <input
                 type="password"
@@ -93,7 +105,7 @@ const Register = () => {
               <span className=" text-gray">Accept Terms & Conditions</span>
             </div>
             <div className="form-control mt-6">
-              <button type="submit" className="btn btn-neutral w-full">
+              <button type="submit" className="btn btn-success w-full">
                 Register
               </button>
             </div>

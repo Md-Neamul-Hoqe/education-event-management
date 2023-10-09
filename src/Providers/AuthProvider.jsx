@@ -10,6 +10,7 @@ import {
   signOut,
 } from "firebase/auth";
 import app from "../firebase/firebase.config";
+import { toast } from "react-toastify";
 
 export const AuthContext = createContext(null);
 
@@ -27,14 +28,22 @@ const AuthProviders = ({ children }) => {
 
   const signIn = (email, password) => {
     setLoading(true);
+
     return signInWithEmailAndPassword(auth, email, password);
   };
 
   const signInWithGoogle = () => {
     setLoading(true);
+
     const googleProvider = new GoogleAuthProvider();
+
     const googlePopup = signInWithPopup(auth, googleProvider)
-      .then((result) => setUser(result.user))
+      .then((result) => {
+
+        setUser(result.user);
+
+        toast("Your are logged in successfully.");
+      })
       .catch((error) => setError(error));
 
     return () => googlePopup();
@@ -42,25 +51,26 @@ const AuthProviders = ({ children }) => {
 
   const logOut = () => {
     setLoading(true);
+    
     return signOut(auth);
   };
 
   useEffect(() => {
-    const logOutUser = onAuthStateChanged(auth, (currentUser) => {
+    const userState = onAuthStateChanged(auth, (currentUser) => {
+
       setUser(currentUser);
+
       setLoading(false);
     });
 
     return () => {
-      logOutUser();
+      userState();
     };
   }, []);
 
-
- 
-
   const authInfo = {
     user,
+    setUser,
     createUser,
     error,
     setError,
@@ -69,7 +79,7 @@ const AuthProviders = ({ children }) => {
     logOut,
     signInWithGoogle,
   };
-
+  
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );

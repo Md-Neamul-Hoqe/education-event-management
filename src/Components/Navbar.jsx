@@ -17,20 +17,24 @@ const Navbar = () => {
           Home
         </NavLink>
       </li>
-      <li>
-        <NavLink
-          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/blog">
-          Blog
-        </NavLink>
-      </li>
-      <li>
-        <NavLink
-          className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
-          to="/conversation">
-          Conversation
-        </NavLink>
-      </li>
+      {user && (
+        <>
+          <li>
+            <NavLink
+              className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+              to="/blog">
+              Blog
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              className="hover:border-b-4 pb-2 border-yellow-400 hover:text-yellow-400"
+              to="/conversation">
+              Conversation
+            </NavLink>
+          </li>
+        </>
+      )}
     </>
   );
 

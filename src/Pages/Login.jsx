@@ -5,11 +5,10 @@ import Navbar from "../Components/Navbar";
 import { FcGoogle } from "react-icons/fc";
 import { ToastContainer, toast } from "react-toastify";
 
+const notify = () => toast("Logged in successfully.");
 const Login = () => {
-  const { user, signIn, createUser, error, setError, signInWithGoogle } =
+  const { user, signIn, setUser, error, setError, signInWithGoogle } =
     useContext(AuthContext);
-
-  const notify = () => toast("Logged in successfully.");
 
   const location = useLocation();
   const navigate = useNavigate();
@@ -25,10 +24,15 @@ const Login = () => {
 
     signIn(email, password)
       .then((result) => {
-        createUser(result.user);
+        setUser(result.user);
 
+        e.target.reset();
+
+        console.log(location, location?.state);
         /* navigate after login */
-        navigate(location?.state ? location.state : "/");
+        location?.state && navigate(location?.state);
+
+        toast("Your are logged in successfully.");
       })
       .catch((error) => {
         console.table(error.customData);
@@ -38,18 +42,13 @@ const Login = () => {
   };
 
   return (
-    <section className="bg-base-200">
+    <section>
       <Navbar />
       <div className="hero min-h-screen">
-        <div className="card w-full max-w-lg bg-white">
-          <form
-            onSubmit={() => {
-              handleLogin();
-              user && notify();
-            }}
-            className="card-body">
-            <h2 className="text-2xl text-center text-dark font-semibold">
-              Login your account
+        <div className="card w-full max-w-lg lg:bg-white">
+          <form onSubmit={handleLogin} className="card-body">
+            <h2 className="text-2xl text-center max-md:text-white text-dark font-semibold">
+              Login to your account
             </h2>
 
             <hr className="my-5 text-light" />
@@ -57,13 +56,15 @@ const Login = () => {
             {/* Email */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-semibold">Email Address</span>
+                <span className="label-text max-md:text-white font-semibold">
+                  Email Address
+                </span>
               </label>
               <input
                 type="email"
                 name="email"
                 placeholder="Enter your email address"
-                className="input input-bordered bg-light mt-4 mb-6"
+                className="input input-bordered max-md:bg-periwinkle bg-light mt-4 mb-6"
                 required
               />
             </div>
@@ -71,26 +72,28 @@ const Login = () => {
             {/* password */}
             <div className="form-control">
               <label className="label">
-                <span className="label-text font-semibold">Password</span>
+                <span className="label-text max-md:text-white font-semibold">
+                  Password
+                </span>
               </label>
               <input
                 type="password"
                 name="password"
                 placeholder="Enter your password"
-                className="input input-bordered bg-light mt-4 mb-6"
+                className="input input-bordered max-md:bg-periwinkle bg-light mt-4 mb-6"
                 required
               />
             </div>
 
             {/* submit button */}
             <div className="form-control mt-2">
-              <button type="submit" className="btn btn-neutral w-full">
+              <button type="submit" className="btn btn-success w-full">
                 Login
               </button>
             </div>
 
             {/* go to register page */}
-            <div className="text-center py-7">
+            <div className="text-center pt-7">
               <span>Don&apos;t have an account?</span>
               <Link to="/register" className="link link-hover text-info ps-2">
                 Register
@@ -112,7 +115,7 @@ const Login = () => {
 
             {error && (
               <div>
-                <p>{error}</p>
+                <p className="text-red-800 bg-red-300 p-3 rounded-lg">{error}</p>
               </div>
             )}
           </form>

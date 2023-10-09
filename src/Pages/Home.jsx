@@ -8,6 +8,7 @@ import Footer from "../Components/Footer";
 import UpComing from "../Components/UpComing";
 // import LatestBlog from "../Components/LatestBlog";
 import Testimonial from "../Components/Testimonial";
+import { ToastContainer } from "react-toastify";
 
 AOS.init();
 
@@ -33,6 +34,7 @@ const Home = () => {
       <Helmet>
         <title>Education Care | Home</title>
       </Helmet>
+      <ToastContainer />
     </>
   );
 };
