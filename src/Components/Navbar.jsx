@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+// import { AiOutlineShoppingCart } from "react-icons/ai";
 import { FcReading } from "react-icons/fc";
 import { useContext } from "react";
 import { AuthContext } from "../Providers/AuthProvider";
@@ -70,28 +70,16 @@ const Navbar = () => {
             <FcReading />
           </Link>
         </div>
-        <div className="navbar-end hidden lg:flex">
+        <div className="navbar-center hidden lg:flex">
           <ul className="space-x-10 menu-horizontal px-3 uppercase">
             {NavLinks}
           </ul>
-          <button className="btn btn-ghost btn-circle">
-            <div className="indicator">
-              <AiOutlineShoppingCart />
-              <span className="badge badge-xs badge-success text-white p-1 indicator-item">
-                8
-              </span>
-            </div>
-          </button>
-          <button className="btn btn-ghost btn-circle">
-            <i className="fas fa-search"></i>
-          </button>
         </div>
         <div className="navbar-end">
           {user && Object.keys(user).length > 0 ? (
             <>
               <div className="avatar mr-2">
                 <div className="w-12 rounded-full">
-                  {/* <div className="w-12 rounded-full ring ring-dark ring-offset-base-100 ring-offset-2"> */}
                   <img
                     src={user?.photoURL || userDefaultImg}
                     alt={user && user?.displayName}

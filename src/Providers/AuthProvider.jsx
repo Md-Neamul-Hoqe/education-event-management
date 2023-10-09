@@ -18,7 +18,7 @@ const auth = getAuth(app);
 
 const AuthProviders = ({ children }) => {
   const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState({});
+  const [user, setUser] = useState(null);
   const [error, setError] = useState("");
 
   const createUser = (email, password) => {
@@ -39,7 +39,6 @@ const AuthProviders = ({ children }) => {
 
     const googlePopup = signInWithPopup(auth, googleProvider)
       .then((result) => {
-
         setUser(result.user);
 
         toast("Your are logged in successfully.");
@@ -51,13 +50,12 @@ const AuthProviders = ({ children }) => {
 
   const logOut = () => {
     setLoading(true);
-    
+
     return signOut(auth);
   };
 
   useEffect(() => {
     const userState = onAuthStateChanged(auth, (currentUser) => {
-
       setUser(currentUser);
 
       setLoading(false);
@@ -79,7 +77,7 @@ const AuthProviders = ({ children }) => {
     logOut,
     signInWithGoogle,
   };
-  
+
   return (
     <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
   );
